@@ -1,0 +1,2 @@
+= Copyright Footer Extension
+:copyright: varun chari
