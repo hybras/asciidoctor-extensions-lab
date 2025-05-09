@@ -1,0 +1,963 @@
+Running RuboCop...
+Inspecting 102 files
+....CCFCCCCCCCCCCCCCWCCCCCCCCCCWCWCWCCCWCCCCCCCCCCCCCCCCWCCCCCCCCCCCWCCCCCCCCCCCCCCCCCCCCWCCCCCCCCCCC.
+
+Offenses:
+
+lib/asciidoctor/extensions/add-section-block.rb:1:1: C: Naming/FileName: The name of this source file (add-section-block.rb) should use snake_case.
+lib/asciidoctor/extensions/add-section-block.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/add-section-block.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/asciidoc-docinfoprocessor.rb:1:1: C: Naming/FileName: The name of this source file (asciidoc-docinfoprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/asciidoc-docinfoprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/asciidoc-docinfoprocessor.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/autoxref-treeprocessor.rb:135:25: F: Lint/Syntax: unexpected token kELSE
+(Using Ruby 3.0 parser; configure using TargetRubyVersion parameter, under AllCops)
+      if default.nil? 0 else then default.call end
+                        ^^^^
+lib/asciidoctor/extensions/autoxref-treeprocessor.rb:138:1: F: Lint/Syntax: unexpected token kEND
+(Using Ruby 3.0 parser; configure using TargetRubyVersion parameter, under AllCops)
+end
+^^^
+lib/asciidoctor/extensions/back-to-top-docinfo-processor.rb:1:1: C: Naming/FileName: The name of this source file (back-to-top-docinfo-processor.rb) should use snake_case.
+lib/asciidoctor/extensions/back-to-top-docinfo-processor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+# Adds a floating back to top button to the bottom right corner of the page
+^
+lib/asciidoctor/extensions/back-to-top-docinfo-processor.rb:3:1: C: Metrics/BlockLength: Block has too many lines. [55/25]
+Asciidoctor::Extensions.register do ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/back-to-top-docinfo-processor.rb:4:3: C: Metrics/BlockLength: Block has too many lines. [27/25]
+  docinfo_processor do ...
+  ^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/back-to-top-docinfo-processor.rb:33:1: C: Naming/HeredocDelimiterNaming: Use meaningful heredoc delimiters.
+      EOS
+^^^^^^^^^
+lib/asciidoctor/extensions/back-to-top-docinfo-processor.rb:42:30: C: Style/TernaryParentheses: Omit parentheses for ternary conditions.
+        <span class="icon">#{(doc.attr? 'icons', 'font') ? '<i class="fa fa-arrow-up"></i>' : '^'}</span>
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/back-to-top-docinfo-processor.rb:63:1: C: Naming/HeredocDelimiterNaming: Use meaningful heredoc delimiters.
+      EOS
+^^^^^^^^^
+lib/asciidoctor/extensions/chrome-inline-macro.rb:1:1: C: Naming/FileName: The name of this source file (chrome-inline-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/chrome-inline-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'chrome-inline-macro/extension') : (require_relative 'chrome-inline-macro/extension')
+^
+lib/asciidoctor/extensions/chrome-inline-macro/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/chrome-inline-macro/extension.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/compound-block.rb:1:1: C: Naming/FileName: The name of this source file (compound-block.rb) should use snake_case.
+lib/asciidoctor/extensions/compound-block.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions'
+^
+lib/asciidoctor/extensions/copy-to-clipboard-docinfo-processor.rb:1:1: C: Naming/FileName: The name of this source file (copy-to-clipboard-docinfo-processor.rb) should use snake_case.
+lib/asciidoctor/extensions/copy-to-clipboard-docinfo-processor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'copy-to-clipboard-docinfo-processor/extension') : (require_relative 'copy-to-clipboard-docinfo-processor/extension')
+^
+lib/asciidoctor/extensions/copy-to-clipboard-docinfo-processor.rb:1:121: C: Layout/LineLength: Line is too long. [150/120]
+RUBY_ENGINE == 'opal' ? (require 'copy-to-clipboard-docinfo-processor/extension') : (require_relative 'copy-to-clipboard-docinfo-processor/extension')
+                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/copy-to-clipboard-docinfo-processor/extension.rb:1:1: C: Style/Documentation: Missing top-level documentation comment for class CopyToClipboardTreeProcessor.
+class CopyToClipboardTreeProcessor < Asciidoctor::Extensions::TreeProcessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/copy-to-clipboard-docinfo-processor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+class CopyToClipboardTreeProcessor < Asciidoctor::Extensions::TreeProcessor
+^
+lib/asciidoctor/extensions/copy-to-clipboard-docinfo-processor/extension.rb:8:1: C: Style/Documentation: Missing top-level documentation comment for class CopyToClipboardStylesDocinfoProcessor.
+class CopyToClipboardStylesDocinfoProcessor < Asciidoctor::Extensions::DocinfoProcessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/copy-to-clipboard-docinfo-processor/extension.rb:18:1: C: Naming/HeredocDelimiterNaming: Use meaningful heredoc delimiters.
+    EOS
+^^^^^^^
+lib/asciidoctor/extensions/copy-to-clipboard-docinfo-processor/extension.rb:22:1: C: Style/Documentation: Missing top-level documentation comment for class CopyToClipboardBehaviorDocinfoProcessor.
+class CopyToClipboardBehaviorDocinfoProcessor < Asciidoctor::Extensions::DocinfoProcessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/copy-to-clipboard-docinfo-processor/extension.rb:32:1: C: Naming/HeredocDelimiterNaming: Use meaningful heredoc delimiters.
+    EOS
+^^^^^^^
+lib/asciidoctor/extensions/copyright-footer-postprocessor.rb:1:1: C: Naming/FileName: The name of this source file (copyright-footer-postprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/copyright-footer-postprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'copyright-footer-postprocessor/extension') : (require_relative 'copyright-footer-postprocessor/extension')
+^
+lib/asciidoctor/extensions/copyright-footer-postprocessor.rb:1:121: C: Layout/LineLength: Line is too long. [140/120]
+RUBY_ENGINE == 'opal' ? (require 'copyright-footer-postprocessor/extension') : (require_relative 'copyright-footer-postprocessor/extension')
+                                                                                                                        ^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/copyright-footer-postprocessor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/copyright-footer-postprocessor/extension.rb:3:1: C: Style/Documentation: Missing top-level documentation comment for class CopyrightFooterPostprocessor.
+class CopyrightFooterPostprocessor < Asciidoctor::Extensions::Postprocessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/custom-admonition-block.rb:1:1: C: Naming/FileName: The name of this source file (custom-admonition-block.rb) should use snake_case.
+lib/asciidoctor/extensions/custom-admonition-block.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'custom-admonition-block/extension') : (require_relative 'custom-admonition-block/extension')
+^
+lib/asciidoctor/extensions/custom-admonition-block.rb:1:121: C: Layout/LineLength: Line is too long. [126/120]
+RUBY_ENGINE == 'opal' ? (require 'custom-admonition-block/extension') : (require_relative 'custom-admonition-block/extension')
+                                                                                                                        ^^^^^^
+lib/asciidoctor/extensions/custom-admonition-block/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions'
+^
+lib/asciidoctor/extensions/custom-admonition-block/extension.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/custom-admonition-block/extension.rb:33:1: C: Style/Documentation: Missing top-level documentation comment for class CustomAdmonitionBlockDocinfo.
+class CustomAdmonitionBlockDocinfo < Extensions::DocinfoProcessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/custom-admonition-tree-processor.rb:1:1: C: Naming/FileName: The name of this source file (custom-admonition-tree-processor.rb) should use snake_case.
+lib/asciidoctor/extensions/custom-admonition-tree-processor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'custom-admonition-tree-processor/extension') : (require_relative 'custom-admonition-tree-processor/extension')
+^
+lib/asciidoctor/extensions/custom-admonition-tree-processor.rb:1:121: C: Layout/LineLength: Line is too long. [144/120]
+RUBY_ENGINE == 'opal' ? (require 'custom-admonition-tree-processor/extension') : (require_relative 'custom-admonition-tree-processor/extension')
+                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/custom-admonition-tree-processor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions'
+^
+lib/asciidoctor/extensions/custom-admonition-tree-processor/extension.rb:6:3: C: Metrics/AbcSize: Assignment Branch Condition size for process is too high. [<8, 16, 8> 19.6/17]
+  def process(doc) ...
+  ^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/custom-admonition-tree-processor/extension.rb:6:3: C: Metrics/MethodLength: Method has too many lines. [17/10]
+  def process(doc) ...
+  ^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/custom-admonition-tree-processor/extension.rb:10:10: C: [Correctable] Style/NumericPredicate: Use (lines = para.lines).size.positive? instead of (lines = para.lines).size > 0.
+      if (lines = para.lines).size > 0 && ((line_1 = lines[0]).start_with? 'ACTION: ')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/custom-admonition-tree-processor/extension.rb:10:10: C: [Correctable] Style/ZeroLengthPredicate: Use !empty? instead of size > 0.
+      if (lines = para.lines).size > 0 && ((line_1 = lines[0]).start_with? 'ACTION: ')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/custom-admonition-tree-processor/extension.rb:10:45: C: Naming/VariableNumber: Use normalcase for variable numbers.
+      if (lines = para.lines).size > 0 && ((line_1 = lines[0]).start_with? 'ACTION: ')
+                                            ^^^^^^
+lib/asciidoctor/extensions/docstat-inline-macro.rb:1:1: C: Naming/FileName: The name of this source file (docstat-inline-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/docstat-inline-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'docstat-inline-macro/extension') : (require_relative 'docstat-inline-macro/extension')
+^
+lib/asciidoctor/extensions/docstat-inline-macro/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+# A block macro that passes the contents directly to the output.
+^
+lib/asciidoctor/extensions/docstat-inline-macro/extension.rb:16:7: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - paragraphs.
+      paragraphs = parent.document.find_by content: :paragraph
+      ^^^^^^^^^^
+lib/asciidoctor/extensions/docstat-inline-macro/extension.rb:30:27: C: [Correctable] Style/RedundantArgument: Argument ' ' is redundant because it is implied by default.
+      result += line.split(' ').length
+                          ^^^^^
+lib/asciidoctor/extensions/dump-attributes-block-macro.rb:1:1: C: Naming/FileName: The name of this source file (dump-attributes-block-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/dump-attributes-block-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+Asciidoctor::Extensions.register do
+^
+lib/asciidoctor/extensions/emoji-inline-macro.rb:1:1: C: Naming/FileName: The name of this source file (emoji-inline-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/emoji-inline-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'emoji-inline-macro/extension') : (require_relative 'emoji-inline-macro/extension')
+^
+lib/asciidoctor/extensions/emoji-inline-macro/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/emoji-inline-macro/extension.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/emoji-inline-macro/extension.rb:5:1: C: Style/Documentation: Missing top-level documentation comment for class EmojiInlineMacro.
+class EmojiInlineMacro < Extensions::InlineMacroProcessor
+^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/emoji-inline-macro/extension.rb:11:14: C: [Correctable] Style/MutableConstant: Freeze mutable objects assigned to constants.
+  SIZE_MAP = { '1x' => 17, 'lg' => 24, '2x' => 34, '3x' => 50, '4x' => 68, '5x' => 85 }
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/emoji-inline-macro/extension.rb:14:3: C: Metrics/MethodLength: Method has too many lines. [12/10]
+  def process(parent, target, attributes) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/emoji-inline-macro/extension.rb:18:13: C: Style/TernaryParentheses: Omit parentheses for ternary conditions.
+      cdn = (attributes.key? 'cdn') ? attributes['cdn'] : (doc.attr 'emoji-cdn', 'http://www.tortue.me/emoji/')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/emoji-inline-macro/extension.rb:31:1: C: Style/Documentation: Missing top-level documentation comment for class EmojiAssetsDocinfoProcessor.
+class EmojiAssetsDocinfoProcessor < Extensions::DocinfoProcessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/emoji-inline-macro/extension.rb:49:3: C: Metrics/MethodLength: Method has too many lines. [11/10]
+  def handle_stylesheet(doc, extdir, stylesheet_name) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/emoji-inline-macro/extension.rb:50:14: C: Style/TernaryParentheses: Omit parentheses for ternary conditions.
+    outdir = (doc.attr? 'outdir') ? (doc.attr 'outdir') : (doc.attr 'docdir')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/enable-sourcemap-preprocessor.rb:1:1: C: Naming/FileName: The name of this source file (enable-sourcemap-preprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/enable-sourcemap-preprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/enable-sourcemap-preprocessor.rb:3:1: C: Style/Documentation: Missing top-level documentation comment for class Asciidoctor::Document.
+class Asciidoctor::Document
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/enable-sourcemap-preprocessor.rb:3:7: C: [Correctable] Style/ClassAndModuleChildren: Use nested module/class definitions instead of compact style.
+class Asciidoctor::Document
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/eval-block-macro.rb:1:1: C: Naming/FileName: The name of this source file (eval-block-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/eval-block-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+# A block macro that evaluates it's contents using Ruby and parses
+^
+lib/asciidoctor/extensions/eval-block-macro.rb:13:30: C: Security/Eval: The use of eval is a serious security risk.
+      parse_content parent, (eval parent.apply_subs attrs['text'], [:attributes])
+                             ^^^^
+lib/asciidoctor/extensions/external-header-attributes-preprocessor.rb:1:1: C: Naming/FileName: The name of this source file (external-header-attributes-preprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/external-header-attributes-preprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+if RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/external-header-attributes-preprocessor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/external-header-attributes-preprocessor/extension.rb:10:3: C: Metrics/AbcSize: Assignment Branch Condition size for process is too high. [<6, 16, 6> 18.11/17]
+  def process(document, _reader) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/external-header-attributes-preprocessor/extension.rb:14:23: C: [Correctable] Security/YAMLLoad: Prefer using YAML.safe_load over YAML.load.
+      config = ::YAML.load config_data
+                      ^^^^
+lib/asciidoctor/extensions/fold-lines-tree-processor.rb:1:1: C: Naming/FileName: The name of this source file (fold-lines-tree-processor.rb) should use snake_case.
+lib/asciidoctor/extensions/fold-lines-tree-processor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+Asciidoctor::Extensions.register do
+^
+lib/asciidoctor/extensions/footnotes-block-macro.rb:1:1: C: Naming/FileName: The name of this source file (footnotes-block-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/footnotes-block-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+Asciidoctor::Extensions.register do
+^
+lib/asciidoctor/extensions/front-matter-preprocessor.rb:1:1: C: Naming/FileName: The name of this source file (front-matter-preprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/front-matter-preprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'front-matter-preprocessor/extension') : (require_relative 'front-matter-preprocessor/extension')
+^
+lib/asciidoctor/extensions/front-matter-preprocessor.rb:1:121: C: Layout/LineLength: Line is too long. [130/120]
+RUBY_ENGINE == 'opal' ? (require 'front-matter-preprocessor/extension') : (require_relative 'front-matter-preprocessor/extension')
+                                                                                                                        ^^^^^^^^^^
+lib/asciidoctor/extensions/front-matter-preprocessor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/front-matter-preprocessor/extension.rb:5:3: C: Metrics/AbcSize: Assignment Branch Condition size for process is too high. [<6, 24, 10> 26.68/17]
+  def process(document, reader) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/front-matter-preprocessor/extension.rb:5:3: C: Metrics/MethodLength: Method has too many lines. [16/10]
+  def process(document, reader) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/front-matter-preprocessor/extension.rb:17:9: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - lines.
+        lines = original_lines
+        ^^^^^
+lib/asciidoctor/extensions/gist-block-macro.rb:1:1: C: Naming/FileName: The name of this source file (gist-block-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/gist-block-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'gist-block-macro/extension') : (require_relative 'gist-block-macro/extension')
+^
+lib/asciidoctor/extensions/gist-block-macro/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/gist-block-macro/extension.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/gist-block-macro/extension.rb:18:5: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - role.
+    role = ((attrs['role'] || '') + ' ').lstrip + 'gist'
+    ^^^^
+lib/asciidoctor/extensions/gist-block-macro/extension.rb:18:12: C: [Correctable] Style/StringConcatenation: Prefer string interpolation to string concatenation.
+    role = ((attrs['role'] || '') + ' ').lstrip + 'gist'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/gist-block-macro/extension.rb:18:13: C: Style/StringConcatenation: Prefer string interpolation to string concatenation.
+    role = ((attrs['role'] || '') + ' ').lstrip + 'gist'
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro.rb:1:1: C: Naming/FileName: The name of this source file (git-metadata-inline-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/git-metadata-inline-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'git-metadata-inline-macro/extension') : (require_relative 'git-metadata-inline-macro/extension')
+^
+lib/asciidoctor/extensions/git-metadata-inline-macro.rb:1:121: C: Layout/LineLength: Line is too long. [130/120]
+RUBY_ENGINE == 'opal' ? (require 'git-metadata-inline-macro/extension') : (require_relative 'git-metadata-inline-macro/extension')
+                                                                                                                        ^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:4:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:6:1: C: Metrics/AbcSize: Assignment Branch Condition size for commit_info is too high. [<1, 17, 9> 19.26/17]
+def commit_info(commit, inf) ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:6:1: C: Metrics/CyclomaticComplexity: Cyclomatic complexity for commit_info is too high. [10/7]
+def commit_info(commit, inf) ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:6:1: C: Metrics/MethodLength: Method has too many lines. [20/10]
+def commit_info(commit, inf) ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:29:1: C: Metrics/AbcSize: Assignment Branch Condition size for tag_info is too high. [<1, 28, 10> 29.75/17]
+def tag_info(tag, inf) ...
+^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:29:1: C: Metrics/CyclomaticComplexity: Cyclomatic complexity for tag_info is too high. [11/7]
+def tag_info(tag, inf) ...
+^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:29:1: C: Metrics/MethodLength: Method has too many lines. [22/10]
+def tag_info(tag, inf) ...
+^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:54:1: C: Metrics/AbcSize: Assignment Branch Condition size for get_git_info is too high. [<4, 26, 15> 30.28/17]
+def get_git_info(info_type, name, want) ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:54:1: C: Metrics/CyclomaticComplexity: Cyclomatic complexity for get_git_info is too high. [13/7]
+def get_git_info(info_type, name, want) ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:54:1: C: Metrics/MethodLength: Method has too many lines. [35/10]
+def get_git_info(info_type, name, want) ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:54:1: C: Metrics/PerceivedComplexity: Perceived complexity for get_git_info is too high. [13/8]
+def get_git_info(info_type, name, want) ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:78:27: C: [Correctable] Style/StringConcatenation: Prefer string interpolation to string concatenation.
+    ref = repo.references['refs/tags/' + name]
+                          ^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:89:27: C: [Correctable] Style/StringConcatenation: Prefer string interpolation to string concatenation.
+    ref = repo.references['refs/heads/' + name]
+                          ^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:98:1: C: Style/Documentation: Missing top-level documentation comment for class GitMetadataInlineMacro.
+class GitMetadataInlineMacro < Extensions::InlineMacroProcessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-inline-macro/extension.rb:105:5: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - doc.
+    doc = parent.document
+    ^^^
+lib/asciidoctor/extensions/git-metadata-preprocessor.rb:1:1: C: Naming/FileName: The name of this source file (git-metadata-preprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/git-metadata-preprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+if RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/git-metadata-preprocessor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/git-metadata-preprocessor/extension.rb:6:1: C: Style/Documentation: Missing top-level documentation comment for class GitMetadataPreprocessor.
+class GitMetadataPreprocessor < Asciidoctor::Extensions::Preprocessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-preprocessor/extension.rb:7:3: C: Metrics/AbcSize: Assignment Branch Condition size for process is too high. [<25, 86, 19> 91.55/17]
+  def process(document, _reader) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-preprocessor/extension.rb:7:3: C: Metrics/CyclomaticComplexity: Cyclomatic complexity for process is too high. [16/7]
+  def process(document, _reader) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-preprocessor/extension.rb:7:3: C: Metrics/MethodLength: Method has too many lines. [42/10]
+  def process(document, _reader) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-preprocessor/extension.rb:7:3: C: Metrics/PerceivedComplexity: Perceived complexity for process is too high. [17/8]
+  def process(document, _reader) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/git-metadata-preprocessor/extension.rb:42:121: C: Layout/LineLength: Line is too long. [122/120]
+               .select { |t| t.target_id == head.target_id || (t.annotated? && t.annotation.target_id == head.target_id) }
+                                                                                                                        ^^
+lib/asciidoctor/extensions/glob-include-processor.rb:1:1: C: Naming/FileName: The name of this source file (glob-include-processor.rb) should use snake_case.
+lib/asciidoctor/extensions/glob-include-processor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'glob-include-processor/extension') : (require_relative 'glob-include-processor/extension')
+^
+lib/asciidoctor/extensions/glob-include-processor.rb:1:121: C: Layout/LineLength: Line is too long. [124/120]
+RUBY_ENGINE == 'opal' ? (require 'glob-include-processor/extension') : (require_relative 'glob-include-processor/extension')
+                                                                                                                        ^^^^
+lib/asciidoctor/extensions/glob-include-processor/extension.rb:1:1: C: Style/Documentation: Missing top-level documentation comment for class GlobIncludeProcessor.
+class GlobIncludeProcessor < Asciidoctor::Extensions::IncludeProcessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/glob-include-processor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+class GlobIncludeProcessor < Asciidoctor::Extensions::IncludeProcessor
+^
+lib/asciidoctor/extensions/glob-include-processor/extension.rb:3:44: W: [Correctable] Lint/RedundantDirGlobSort: Remove redundant sort.
+    Dir[File.join reader.dir, target_glob].sort.reverse_each do |target|
+                                           ^^^^
+lib/asciidoctor/extensions/glob-include-processor/extension.rb:4:17: C: [Correctable] Security/IoMethods: File.readlines is safer than IO.readlines.
+      content = IO.readlines target
+                ^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/google-analytics-docinfoprocessor.rb:1:1: C: Naming/FileName: The name of this source file (google-analytics-docinfoprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/google-analytics-docinfoprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/google-analytics-postprocessor.rb:1:1: C: Naming/FileName: The name of this source file (google-analytics-postprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/google-analytics-postprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/hardbreaks-preprocessor.rb:1:1: C: Naming/FileName: The name of this source file (hardbreaks-preprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/hardbreaks-preprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/hardbreaks-preprocessor.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/highlight-treeprocessor.rb:1:1: C: Naming/FileName: The name of this source file (highlight-treeprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/highlight-treeprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/highlight-treeprocessor.rb:4:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/highlight-treeprocessor.rb:18:1: C: Metrics/BlockLength: Block has too many lines. [46/25]
+Extensions.register do ...
+^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/highlight-treeprocessor.rb:19:3: C: Metrics/BlockLength: Block has too many lines. [26/25]
+  treeprocessor do ...
+  ^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/implicit-apidoc-inline-macro.rb:1:1: C: Naming/FileName: The name of this source file (implicit-apidoc-inline-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/implicit-apidoc-inline-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+# An inline macro that turns Java types the begin with java. or javax. into links.
+^
+lib/asciidoctor/extensions/implicit-header-include-processor.rb:1:1: C: Naming/FileName: The name of this source file (implicit-header-include-processor.rb) should use snake_case.
+lib/asciidoctor/extensions/implicit-header-include-processor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'implicit-header-include-processor/extension') : (require_relative 'implicit-header-include-processor/extension')
+^
+lib/asciidoctor/extensions/implicit-header-include-processor.rb:1:121: C: Layout/LineLength: Line is too long. [146/120]
+RUBY_ENGINE == 'opal' ? (require 'implicit-header-include-processor/extension') : (require_relative 'implicit-header-include-processor/extension')
+                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/implicit-header-include-processor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/implicit-header-include-processor/extension.rb:6:3: C: Naming/ConstantName: Use SCREAMING_SNAKE_CASE for constants.
+  AuthorInfoLineRx = /^(\p{Word}[\p{Word}\-'.]*)(?: +(\p{Word}[\p{Word}\-'.]*))?(?: +(\p{Word}[\p{Word}\-'.]*))?(?: +<([^>]+)>)?$/
+  ^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/implicit-header-include-processor/extension.rb:6:121: C: Layout/LineLength: Line is too long. [130/120]
+  AuthorInfoLineRx = /^(\p{Word}[\p{Word}\-'.]*)(?: +(\p{Word}[\p{Word}\-'.]*))?(?: +(\p{Word}[\p{Word}\-'.]*))?(?: +<([^>]+)>)?$/
+                                                                                                                        ^^^^^^^^^^
+lib/asciidoctor/extensions/implicit-header-include-processor/extension.rb:8:3: C: Metrics/AbcSize: Assignment Branch Condition size for process is too high. [<14, 35, 14> 40.21/17]
+  def process(doc, reader, target, attributes) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/implicit-header-include-processor/extension.rb:8:3: C: Metrics/CyclomaticComplexity: Cyclomatic complexity for process is too high. [12/7]
+  def process(doc, reader, target, attributes) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/implicit-header-include-processor/extension.rb:8:3: C: Metrics/MethodLength: Method has too many lines. [35/10]
+  def process(doc, reader, target, attributes) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/implicit-header-include-processor/extension.rb:8:3: C: Metrics/PerceivedComplexity: Perceived complexity for process is too high. [15/8]
+  def process(doc, reader, target, attributes) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/implicit-header-include-processor/extension.rb:12:5: C: Metrics/BlockLength: Block has too many lines. [30/25]
+    ::File.open inc_path, 'r' do |fd| ...
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/implicit-header-include-processor/extension.rb:17:11: C: [Correctable] Style/HashEachMethods: Use each_key instead of each and remove the unused _counter_val block argument.
+          doc.counters.each do |counter_key, _counter_val| ...
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/lab.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+module Asciidoctor
+^
+lib/asciidoctor/extensions/lab.rb:4:17: C: [Correctable] Style/MutableConstant: Freeze mutable objects assigned to constants.
+      VERSION = '0.1.0'
+                ^^^^^^^
+lib/asciidoctor/extensions/license-url-docinfoprocessor.rb:1:1: C: Naming/FileName: The name of this source file (license-url-docinfoprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/license-url-docinfoprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/license-url-docinfoprocessor.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/license-url-docinfoprocessor.rb:26:9: C: [Correctable] Style/CaseLikeIf: Convert if-elsif to case-when.
+        if backend == 'docbook5' ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/lorem-block-macro.rb:1:1: C: Naming/FileName: The name of this source file (lorem-block-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/lorem-block-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'middleman-core'
+^
+lib/asciidoctor/extensions/man-inline-macro.rb:1:1: C: Naming/FileName: The name of this source file (man-inline-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/man-inline-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'man-inline-macro/extension') : (require_relative 'man-inline-macro/extension')
+^
+lib/asciidoctor/extensions/man-inline-macro/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/man-inline-macro/extension.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/man-inline-macro/extension.rb:17:3: C: Metrics/MethodLength: Method has too many lines. [15/10]
+  def process(parent, target, attrs) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/markdown-link-inline-macro.rb:1:1: C: Naming/FileName: The name of this source file (markdown-link-inline-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/markdown-link-inline-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+# An inline macro that parses a Markdown-style link.
+^
+lib/asciidoctor/extensions/mathematical-treeprocessor.rb:1:1: C: Naming/FileName: The name of this source file (mathematical-treeprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/mathematical-treeprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'mathematical-treeprocessor/extension') : (require_relative 'mathematical-treeprocessor/extension')
+^
+lib/asciidoctor/extensions/mathematical-treeprocessor.rb:1:121: C: Layout/LineLength: Line is too long. [132/120]
+RUBY_ENGINE == 'opal' ? (require 'mathematical-treeprocessor/extension') : (require_relative 'mathematical-treeprocessor/extension')
+                                                                                                                        ^^^^^^^^^^^^
+lib/asciidoctor/extensions/mathematical-treeprocessor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/mathematical-treeprocessor/extension.rb:5:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/mathematical-treeprocessor/extension.rb:7:1: C: Style/Documentation: Missing top-level documentation comment for class MathematicalTreeprocessor.
+class MathematicalTreeprocessor < Extensions::Treeprocessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/mathematical-treeprocessor/extension.rb:8:3: C: Metrics/AbcSize: Assignment Branch Condition size for process is too high. [<22, 34, 11> 41.96/17]
+  def process(document) ...
+  ^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/mathematical-treeprocessor/extension.rb:8:3: C: Metrics/CyclomaticComplexity: Cyclomatic complexity for process is too high. [10/7]
+  def process(document) ...
+  ^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/mathematical-treeprocessor/extension.rb:8:3: C: Metrics/MethodLength: Method has too many lines. [30/10]
+  def process(document) ...
+  ^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/mathematical-treeprocessor/extension.rb:8:3: C: Metrics/PerceivedComplexity: Perceived complexity for process is too high. [10/8]
+  def process(document) ...
+  ^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/mentions-inline-macro.rb:1:1: C: Naming/FileName: The name of this source file (mentions-inline-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/mentions-inline-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/mentions-inline-macro.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/multipage-html5-converter.rb:1:1: C: Naming/FileName: The name of this source file (multipage-html5-converter.rb) should use snake_case.
+lib/asciidoctor/extensions/multipage-html5-converter.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+# Chunks the HTML output generated by the HTML5 converter by chapter. This
+^
+lib/asciidoctor/extensions/multipage-html5-converter.rb:16:9: C: [Correctable] Style/MutableConstant: Freeze mutable objects assigned to constants.
+  EOL = "\n"
+        ^^^^
+lib/asciidoctor/extensions/multipage-html5-converter.rb:29:3: C: Metrics/AbcSize: Assignment Branch Condition size for document is too high. [<5, 24, 5> 25.02/17]
+  def document(node) ...
+  ^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/multipage-html5-converter.rb:29:3: C: Metrics/MethodLength: Method has too many lines. [12/10]
+  def document(node) ...
+  ^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/multipage-html5-converter.rb:30:22: C: [Correctable] Style/SymbolProc: Pass &:convert as an argument to each instead of a block.
+    node.blocks.each { |b| b.convert }
+                     ^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/multipage-html5-converter.rb:47:121: C: Layout/LineLength: Line is too long. [152/120]
+                                         parse: true, attributes: { 'noheader' => '', 'doctitle' => node.title, 'imagesdir' => (node.attr 'imagesdir') }
+                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/multipage-html5-converter.rb:60:3: C: Metrics/AbcSize: Assignment Branch Condition size for reparent is too high. [<7, 16, 8> 19.21/17]
+  def reparent(node, parent) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/multipage-html5-converter.rb:60:3: C: Metrics/MethodLength: Method has too many lines. [13/10]
+  def reparent(node, parent) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/multipage-html5-converter.rb:67:9: W: Lint/SelfAssignment: Self-assignment detected.
+        col.parent = col.parent
+        ^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/multipage-html5-converter.rb:71:11: W: Lint/SelfAssignment: Self-assignment detected.
+          cell.parent = cell.parent
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/multirow-table-header-tree-processor.rb:1:1: C: Naming/FileName: The name of this source file (multirow-table-header-tree-processor.rb) should use snake_case.
+lib/asciidoctor/extensions/multirow-table-header-tree-processor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+Asciidoctor::Extensions.register do
+^
+lib/asciidoctor/extensions/multirow-table-header-tree-processor.rb:23:78: C: [Correctable] Style/NumericPredicate: Use promote_rows.positive? instead of promote_rows > 0.
+            table_rows.head.concat table_rows.body.slice! 0, promote_rows if promote_rows > 0
+                                                                             ^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/nested-open-block.rb:1:1: C: Naming/FileName: The name of this source file (nested-open-block.rb) should use snake_case.
+lib/asciidoctor/extensions/nested-open-block.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+# A custom block that allows open blocks to be nested using the
+^
+lib/asciidoctor/extensions/number-paragraphs-tree-processor.rb:1:1: C: Naming/FileName: The name of this source file (number-paragraphs-tree-processor.rb) should use snake_case.
+lib/asciidoctor/extensions/number-paragraphs-tree-processor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/number-paragraphs-tree-processor.rb:3:121: C: Layout/LineLength: Line is too long. [144/120]
+RUBY_ENGINE == 'opal' ? (require 'number-paragraphs-tree-processor/extension') : (require_relative 'number-paragraphs-tree-processor/extension')
+                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/number-paragraphs-tree-processor/extension.rb:1:1: C: Style/Documentation: Missing top-level documentation comment for class NumberParagraphsTreeProcessor.
+class NumberParagraphsTreeProcessor < Asciidoctor::Extensions::TreeProcessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/number-paragraphs-tree-processor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+class NumberParagraphsTreeProcessor < Asciidoctor::Extensions::TreeProcessor
+^
+lib/asciidoctor/extensions/pass-block-macro.rb:1:1: C: Naming/FileName: The name of this source file (pass-block-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/pass-block-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'pass-block-macro/extension') : (require_relative 'pass-block-macro/extension')
+^
+lib/asciidoctor/extensions/pass-block-macro/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/pass-block-macro/extension.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/pick-inline-macro.rb:1:1: C: Naming/FileName: The name of this source file (pick-inline-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/pick-inline-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/pick-inline-macro.rb:2:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/pick-inline-macro.rb:13:1: C: Metrics/BlockLength: Block has too many lines. [29/25]
+Extensions.register do ...
+^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/pre-include-processor.rb:1:1: C: Naming/FileName: The name of this source file (pre-include-processor.rb) should use snake_case.
+lib/asciidoctor/extensions/pre-include-processor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require_relative 'pre-include-processor/extension'
+^
+lib/asciidoctor/extensions/pre-include-processor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'tempfile'
+^
+lib/asciidoctor/extensions/pre-include-processor/extension.rb:3:1: C: Style/Documentation: Missing top-level documentation comment for class PreIncludeProcessor.
+class PreIncludeProcessor < Asciidoctor::Extensions::IncludeProcessor
+^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/pre-include-processor/extension.rb:6:3: C: Metrics/AbcSize: Assignment Branch Condition size for process is too high. [<9, 16, 1> 18.38/17]
+  def process(_doc, reader, target, attrs) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/pre-include-processor/extension.rb:6:3: C: Metrics/MethodLength: Method has too many lines. [13/10]
+  def process(_doc, reader, target, attrs) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/pre-include-processor/sample.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+# puts 1
+^
+lib/asciidoctor/extensions/protect-emails-postprocessor.rb:1:1: C: Naming/FileName: The name of this source file (protect-emails-postprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/protect-emails-postprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'protect-emails-postprocessor/extension') : (require_relative 'protect-emails-postprocessor/extension')
+^
+lib/asciidoctor/extensions/protect-emails-postprocessor.rb:1:121: C: Layout/LineLength: Line is too long. [136/120]
+RUBY_ENGINE == 'opal' ? (require 'protect-emails-postprocessor/extension') : (require_relative 'protect-emails-postprocessor/extension')
+                                                                                                                        ^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/protect-emails-postprocessor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/protect-emails-postprocessor/extension.rb:8:1: C: Style/Documentation: Missing top-level documentation comment for class ProtectEmailsDocinfoProcessor.
+class ProtectEmailsDocinfoProcessor < Asciidoctor::Extensions::DocinfoProcessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/protect-emails-postprocessor/extension.rb:13:18: C: [Correctable] Style/MutableConstant: Freeze mutable objects assigned to constants.
+  ROT13_SCRIPT = '<script type="text/javascript">!function(){try{var a,b,c,d,g=document.getElementsByTagName("a");for(c=0;g.length-c;c++)try{b=g[c].getAttribute("href"),b&&b.indexOf("#email-protection-")>-1&&b.length>19&&(a="",d=19+b.indexOf("#email-protection-"),b.length>d&&(a=b.substr(18).replace(/[a-zA-Z]/g,function(a){return String.fromCharCode(("Z">=a?90:122)>=(a=a.charCodeAt(0)+13)?a:a-26)})),g[c].setAttribute("href","mailto:"+a))}catch(h){}}catch(h){}}();</script>'
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/protect-emails-postprocessor/extension.rb:13:121: C: Layout/LineLength: Line is too long. [476/120]
+  ROT13_SCRIPT = '<script type="text/javascript">!function(){try{var a,b,c,d,g=document.getElementsByTagName("a");for(c=0;g.length-c;c++)try{b=g[c].getAttribute("href"),b&&b.indexOf("#email-protection-")>-1&&b.length>19&&(a="",d=19+b.indexOf("#email-protection-"),b.length>d&&(a=b.substr(18).replace(/[a-zA-Z]/g,function(a){return String.fromCharCode(("Z">=a?90:122)>=(a=a.charCodeAt(0)+13)?a:a-26)})),g[c].setAttribute("href","mailto:"+a))}catch(h){}}catch(h){}}();</script>'
+                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/protect-emails-postprocessor/extension.rb:16:5: C: [Correctable] Style/RedundantInterpolation: Prefer to_s over string interpolation.
+    %(#{ROT13_SCRIPT})
+    ^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/protect-emails-postprocessor/extension.rb:20:1: C: Style/Documentation: Missing top-level documentation comment for class ProtectEmailsPostprocessor.
+class ProtectEmailsPostprocessor < Asciidoctor::Extensions::Postprocessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/protect-emails-postprocessor/extension.rb:22:5: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - output.
+    output = rewrite_response(output)
+    ^^^^^^
+lib/asciidoctor/extensions/pullquote-inline-macro.rb:1:1: C: Naming/FileName: The name of this source file (pullquote-inline-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/pullquote-inline-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'pullquote-inline-macro/extension') : (require_relative 'pullquote-inline-macro/extension')
+^
+lib/asciidoctor/extensions/pullquote-inline-macro.rb:1:121: C: Layout/LineLength: Line is too long. [124/120]
+RUBY_ENGINE == 'opal' ? (require 'pullquote-inline-macro/extension') : (require_relative 'pullquote-inline-macro/extension')
+                                                                                                                        ^^^^
+lib/asciidoctor/extensions/pullquote-inline-macro/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/pullquote-inline-macro/extension.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/ruby-attributes-preprocessor.rb:1:1: C: Naming/FileName: The name of this source file (ruby-attributes-preprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/ruby-attributes-preprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+if RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/ruby-attributes-preprocessor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/ruby-attributes-preprocessor/extension.rb:3:1: C: Style/Documentation: Missing top-level documentation comment for class RubyAttributesPreprocessor.
+class RubyAttributesPreprocessor < Asciidoctor::Extensions::Preprocessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/sectnumoffset-treeprocessor.rb:1:1: C: Naming/FileName: The name of this source file (sectnumoffset-treeprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/sectnumoffset-treeprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/sectnumoffset-treeprocessor.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/sectnumoffset-treeprocessor.rb:12:121: C: Layout/LineLength: Line is too long. [131/120]
+  #  asciidoctor -r ./lib/sectnumoffset-treeprocessor.rb -a sectnums -a sectnumoffset=1 lib/sectnumoffset-treeprocessor/sample.adoc
+                                                                                                                        ^^^^^^^^^^^
+lib/asciidoctor/extensions/sectnumoffset-treeprocessor.rb:17:12: C: [Correctable] Style/NumericPredicate: Use sectnumoffset.positive? instead of sectnumoffset > 0.
+        if sectnumoffset > 0
+           ^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/shell-session-treeprocessor.rb:1:1: C: Naming/FileName: The name of this source file (shell-session-treeprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/shell-session-treeprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'shell-session-treeprocessor/extension') : (require_relative 'shell-session-treeprocessor/extension')
+^
+lib/asciidoctor/extensions/shell-session-treeprocessor.rb:1:121: C: Layout/LineLength: Line is too long. [134/120]
+RUBY_ENGINE == 'opal' ? (require 'shell-session-treeprocessor/extension') : (require_relative 'shell-session-treeprocessor/extension')
+                                                                                                                        ^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/shell-session-treeprocessor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/shell-session-treeprocessor/extension.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/shell-session-treeprocessor/extension.rb:14:8: C: [Correctable] Style/MutableConstant: Freeze mutable objects assigned to constants.
+  LF = "\n"
+       ^^^^
+lib/asciidoctor/extensions/shell-session-treeprocessor/extension.rb:23:3: C: Metrics/MethodLength: Method has too many lines. [13/10]
+  def convert_to_terminal_listing(block) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/shell-session-treeprocessor/extension.rb:29:53: C: [Correctable] Style/SlicingWithRange: Prefer [2..] over [2..-1].
+        %(<span class="command"#{prompt_attr}>#{line[2..-1]}</span>)
+                                                    ^^^^^^^
+lib/asciidoctor/extensions/shell-session-treeprocessor/extension.rb:31:38: C: [Correctable] Style/SlicingWithRange: Prefer [5..] over [5..-1].
+        %(<span class="output">#{line[5..-1]}</span>)
+                                     ^^^^^^^
+lib/asciidoctor/extensions/shout-block.rb:1:1: C: Naming/FileName: The name of this source file (shout-block.rb) should use snake_case.
+lib/asciidoctor/extensions/shout-block.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'shout-block/extension') : (require_relative 'shout-block/extension')
+^
+lib/asciidoctor/extensions/shout-block/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/shout-block/extension.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/shout-block/extension.rb:14:3: C: Naming/ConstantName: Use SCREAMING_SNAKE_CASE for constants.
+  PeriodRx = /\.(?= |$)/
+  ^^^^^^^^
+lib/asciidoctor/extensions/showcomments-preprocessor.rb:1:1: C: Naming/FileName: The name of this source file (showcomments-preprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/showcomments-preprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/showcomments-preprocessor.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/showcomments-preprocessor.rb:12:29: C: [Correctable] Style/SlicingWithRange: Prefer [3..] over [3..-1].
+            %([comment]###{l[3..-1]}##)
+                            ^^^^^^^
+lib/asciidoctor/extensions/slim-block.rb:1:1: C: Naming/FileName: The name of this source file (slim-block.rb) should use snake_case.
+lib/asciidoctor/extensions/slim-block.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'slim-block/extension') : (require_relative 'slim-block/extension')
+^
+lib/asciidoctor/extensions/slim-block/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/slim-block/extension.rb:5:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/slim-block/extension.rb:44:5: C: [Correctable] Style/HashTransformKeys: Prefer transform_keys over each_with_object.
+    attrs.each_with_object({}) do |(key, val), accum| ...
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/steps-postprocessor.rb:1:1: C: Naming/FileName: The name of this source file (steps-postprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/steps-postprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'steps-postprocessor/extension') : (require_relative 'steps-postprocessor/extension')
+^
+lib/asciidoctor/extensions/steps-postprocessor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/steps-postprocessor/extension.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/steps-postprocessor/extension.rb:5:1: C: Style/Documentation: Missing top-level documentation comment for class StepsPostprocessor.
+class StepsPostprocessor < Extensions::Postprocessor
+^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/steps-postprocessor/extension.rb:6:3: C: Metrics/MethodLength: Method has too many lines. [49/10]
+  def process(_document, output) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tel-inline-macro.rb:1:1: C: Naming/FileName: The name of this source file (tel-inline-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/tel-inline-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/tel-inline-macro.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/term-inline-macro.rb:1:1: C: Naming/FileName: The name of this source file (term-inline-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/term-inline-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless defined? Asciidoctor::Extensions
+^
+lib/asciidoctor/extensions/tex-preprocessor.rb:1:1: C: Naming/FileName: The name of this source file (tex-preprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/tex-preprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'tex-preprocessor/extension') : (require_relative 'tex-preprocessor/extension')
+^
+lib/asciidoctor/extensions/tex-preprocessor.rb:8:75: C: [Correctable] Style/RedundantArgument: Argument ' ' is redundant because it is implied by default.
+    preprocessor TeXPreprocessor if (meta_doc.attr 'extensions', '').split(' ').include?('latex')
+                                                                          ^^^^^
+lib/asciidoctor/extensions/tex-preprocessor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/tex-preprocessor/extension.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tex-preprocessor/extension.rb:5:1: C: Style/Documentation: Missing top-level documentation comment for class TeXPreprocessor.
+class TeXPreprocessor < Extensions::Preprocessor
+^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tex-preprocessor/extension.rb:8:20: C: [Correctable] Style/MutableConstant: Freeze mutable objects assigned to constants.
+  TEX_DOLLAR_SUB = '\1latexmath:[\2]\3'
+                   ^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tex-preprocessor/extension.rb:14:7: C: Style/TernaryParentheses: Omit parentheses for ternary conditions.
+      (line.include? '$') ? (line.gsub TEX_DOLLAR_RX, TEX_DOLLAR_SUB) : line
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/textql-block.rb:1:1: C: Naming/FileName: The name of this source file (textql-block.rb) should use snake_case.
+lib/asciidoctor/extensions/textql-block.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/textql-block.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/textql-block.rb:30:22: C: Style/TernaryParentheses: Omit parentheses for ternary conditions.
+      input_header = (attrs.has_key? 'header-option') ? reader.lines.first : nil
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/textql-block.rb:30:29: C: [Correctable] Style/PreferredHashMethods: Use Hash#key? instead of Hash#has_key?.
+      input_header = (attrs.has_key? 'header-option') ? reader.lines.first : nil
+                            ^^^^^^^^
+lib/asciidoctor/extensions/textql-block.rb:31:23: C: Style/TernaryParentheses: Omit parentheses for ternary conditions.
+      output_header = (attrs.has_key? 'header') ? (attrs.delete 'header') : input_header
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/textql-block.rb:31:30: C: [Correctable] Style/PreferredHashMethods: Use Hash#key? instead of Hash#has_key?.
+      output_header = (attrs.has_key? 'header') ? (attrs.delete 'header') : input_header
+                             ^^^^^^^^
+lib/asciidoctor/extensions/textql-block.rb:33:121: C: Layout/LineLength: Line is too long. [140/120]
+      cmd = %(echo "#{reader.source}" | /home/dallen/opt/gocode/bin/textql#{input_header ? ' -header' : nil} -sql "#{attrs.delete 'query'}")
+                                                                                                                        ^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/textql-block.rb:41:46: C: [Correctable] Style/PreferredHashMethods: Use Hash#key? instead of Hash#has_key?.
+        collector[key] = attrs[key] if attrs.has_key? key
+                                             ^^^^^^^^
+lib/asciidoctor/extensions/tree-block-macro.rb:1:1: C: Naming/FileName: The name of this source file (tree-block-macro.rb) should use snake_case.
+lib/asciidoctor/extensions/tree-block-macro.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'tree-block-macro/extension') : (require_relative 'tree-block-macro/extension')
+^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:4:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:14:14: C: [Correctable] Style/MutableConstant: Freeze mutable objects assigned to constants.
+  FS_UNITS = %w[B K M G T P E]
+             ^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:19:3: C: Metrics/AbcSize: Assignment Branch Condition size for process is too high. [<12, 21, 10> 26.17/17]
+  def process(parent, target, attrs) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:19:3: C: Metrics/CyclomaticComplexity: Cyclomatic complexity for process is too high. [9/7]
+  def process(parent, target, attrs) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:19:3: C: Metrics/MethodLength: Method has too many lines. [21/10]
+  def process(parent, target, attrs) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:19:3: C: Metrics/PerceivedComplexity: Perceived complexity for process is too high. [10/8]
+  def process(parent, target, attrs) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:45:3: C: Metrics/AbcSize: Assignment Branch Condition size for walk is too high. [<7, 18, 11> 22.23/17]
+  def walk(path, dirs_only, maxdepth, depth = 1) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:45:3: C: Metrics/CyclomaticComplexity: Cyclomatic complexity for walk is too high. [10/7]
+  def walk(path, dirs_only, maxdepth, depth = 1) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:45:3: C: Metrics/MethodLength: Method has too many lines. [19/10]
+  def walk(path, dirs_only, maxdepth, depth = 1) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:45:3: C: Metrics/PerceivedComplexity: Perceived complexity for walk is too high. [12/8]
+  def walk(path, dirs_only, maxdepth, depth = 1) ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:49:5: C: Style/MultilineBlockChain: Avoid multi-line chains of blocks.
+    end.sort do |a, b|
+    ^^^^^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:55:5: C: Style/MultilineBlockChain: Avoid multi-line chains of blocks.
+    end.each do |child|
+    ^^^^^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:59:17: C: [Correctable] Style/RedundantSelfAssignment: Redundant self assignment detected. Method concat modifies its receiver in place.
+        entries = entries.concat walk child, dirs_only, maxdepth, depth + 1 if !maxdepth || depth < maxdepth
+                ^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:68:69: W: Lint/ShadowingOuterLocalVariable: Shadowing outer local variable - path.
+    path.size + (Pathname.glob %(#{path}/**/*)).reduce(0) { |accum, path| accum += path.size }
+                                                                    ^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:68:75: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - accum. Use + instead of +=.
+    path.size + (Pathname.glob %(#{path}/**/*)).reduce(0) { |accum, path| accum += path.size }
+                                                                          ^^^^^
+lib/asciidoctor/extensions/tree-block-macro/extension.rb:72:23: C: [Correctable] Style/NumericPredicate: Use size_in_bytes.zero? instead of size_in_bytes == 0.
+    return '   0B' if size_in_bytes == 0
+                      ^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/undo-replacements-postprocessor.rb:1:1: C: Naming/FileName: The name of this source file (undo-replacements-postprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/undo-replacements-postprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/undo-replacements-postprocessor.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/undo-replacements-postprocessor.rb:5:1: C: Style/Documentation: Missing top-level documentation comment for class UndoReplacementsPostprocessor.
+class UndoReplacementsPostprocessor < Extensions::Postprocessor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/undo-replacements-postprocessor.rb:6:3: C: Naming/ConstantName: Use SCREAMING_SNAKE_CASE for constants.
+  Replacements = [/&#8594;/, /&#8658;/]
+  ^^^^^^^^^^^^
+lib/asciidoctor/extensions/undo-replacements-postprocessor.rb:6:18: C: [Correctable] Style/MutableConstant: Freeze mutable objects assigned to constants.
+  Replacements = [/&#8594;/, /&#8658;/]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/undo-replacements-postprocessor.rb:7:3: C: Naming/ConstantName: Use SCREAMING_SNAKE_CASE for constants.
+  Originals = ['->', '=>']
+  ^^^^^^^^^
+lib/asciidoctor/extensions/undo-replacements-postprocessor.rb:7:15: C: [Correctable] Style/MutableConstant: Freeze mutable objects assigned to constants.
+  Originals = ['->', '=>']
+              ^^^^^^^^^^^^
+lib/asciidoctor/extensions/uri-include-processor.rb:1:1: C: Naming/FileName: The name of this source file (uri-include-processor.rb) should use snake_case.
+lib/asciidoctor/extensions/uri-include-processor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'uri-include-processor/extension') : (require_relative 'uri-include-processor/extension')
+^
+lib/asciidoctor/extensions/uri-include-processor.rb:1:121: C: Layout/LineLength: Line is too long. [122/120]
+RUBY_ENGINE == 'opal' ? (require 'uri-include-processor/extension') : (require_relative 'uri-include-processor/extension')
+                                                                                                                        ^^
+lib/asciidoctor/extensions/uri-include-processor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/uri-include-processor/extension.rb:4:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/uri-include-processor/extension.rb:13:16: C: Security/Open: The use of Kernel#open is a serious security risk.
+    content = (open target).readlines
+               ^^^^
+lib/asciidoctor/extensions/view-result-docinfoprocessor.rb:1:1: C: Naming/FileName: The name of this source file (view-result-docinfoprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/view-result-docinfoprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'view-result-docinfoprocessor/extension') : (require_relative 'view-result-docinfoprocessor/extension')
+^
+lib/asciidoctor/extensions/view-result-docinfoprocessor.rb:1:121: C: Layout/LineLength: Line is too long. [136/120]
+RUBY_ENGINE == 'opal' ? (require 'view-result-docinfoprocessor/extension') : (require_relative 'view-result-docinfoprocessor/extension')
+                                                                                                                        ^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/view-result-docinfoprocessor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/view-result-docinfoprocessor/extension.rb:28:3: C: Metrics/MethodLength: Method has too many lines. [28/10]
+  def process(_doc) ...
+  ^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/whitespace-include-processor.rb:1:1: C: Naming/FileName: The name of this source file (whitespace-include-processor.rb) should use snake_case.
+lib/asciidoctor/extensions/whitespace-include-processor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/whitespace-include-processor.rb:3:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/xml-entity-postprocessor.rb:1:1: C: Naming/FileName: The name of this source file (xml-entity-postprocessor.rb) should use snake_case.
+lib/asciidoctor/extensions/xml-entity-postprocessor.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+RUBY_ENGINE == 'opal' ? (require 'xml-entity-postprocessor/extension') : (require_relative 'xml-entity-postprocessor/extension')
+^
+lib/asciidoctor/extensions/xml-entity-postprocessor.rb:1:121: C: Layout/LineLength: Line is too long. [128/120]
+RUBY_ENGINE == 'opal' ? (require 'xml-entity-postprocessor/extension') : (require_relative 'xml-entity-postprocessor/extension')
+                                                                                                                        ^^^^^^^^
+lib/asciidoctor/extensions/xml-entity-postprocessor/extension.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+^
+lib/asciidoctor/extensions/xml-entity-postprocessor/extension.rb:6:1: C: Style/MixinUsage: include is used at the top level. Use inside class or module.
+include Asciidoctor
+^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/xml-entity-postprocessor/extension.rb:20:3: C: Naming/ConstantName: Use SCREAMING_SNAKE_CASE for constants.
+  NamedEntityRx = /&[A-Za-z]+[1-8]*;/
+  ^^^^^^^^^^^^^
+lib/asciidoctor/extensions/xml-entity-postprocessor/xml_entity_mapper.rb:1:1: C: Metrics/ClassLength: Class has too many lines. [2141/100]
+class XmlEntityMapper ...
+^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/xml-entity-postprocessor/xml_entity_mapper.rb:1:1: C: Style/Documentation: Missing top-level documentation comment for class XmlEntityMapper.
+class XmlEntityMapper
+^^^^^^^^^^^^^^^^^^^^^
+lib/asciidoctor/extensions/xml-entity-postprocessor/xml_entity_mapper.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+class XmlEntityMapper
+^
+lib/asciidoctor/extensions/xml-entity-postprocessor/xml_entity_mapper.rb:7:22: C: Metrics/CollectionLiteralLength: Avoid hard coding large quantities of data in code. Prefer reading the data from an external source.
+  NAMED_TO_DECIMAL = { ...
+                     ^
+lib/asciidoctor/extensions/xml-entity-postprocessor/xml_entity_mapper.rb:7:22: C: [Correctable] Style/MutableConstant: Freeze mutable objects assigned to constants.
+  NAMED_TO_DECIMAL = { ...
+                     ^
+scripts/asciidoc-coalescer.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+#!/usr/bin/env ruby
+^
+scripts/asciidoc-coalescer.rb:43:4: C: [Correctable] Style/InverseMethods: Use != instead of inverting ==.
+if !((output_file = options[:output]) == '-') && (output_file = File.expand_path output_file) == ((File.expand_path source_file))
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/asciidoc-coalescer.rb:43:121: C: Layout/LineLength: Line is too long. [129/120]
+if !((output_file = options[:output]) == '-') && (output_file = File.expand_path output_file) == ((File.expand_path source_file))
+                                                                                                                        ^^^^^^^^^
+scripts/asciidoc-coalescer.rb:57:121: C: Layout/LineLength: Line is too long. [126/120]
+# FIXME do this more carefully by reading line by line; if input differs by output by leading backslash, restore original line
+                                                                                                                        ^^^^^^
+test/asciidoctor/extensions/test_lab.rb:7:7: C: [Correctable] Style/ClassAndModuleChildren: Use nested module/class definitions instead of compact style.
+class Asciidoctor::Extensions::TestLab < Minitest::Test
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+102 files inspected, 355 offenses detected, 139 more offenses can be corrected with `rubocop -A`
+
+The following RuboCop extension libraries are installed but not loaded in config:
+  * rubocop-minitest
+  * rubocop-rake
+
+You can opt out of this message by adding the following to your config (see https://docs.rubocop.org/rubocop/extensions.html#extension-suggestions for more options):
+  AllCops:
+    SuggestExtensions: false
